@@ -1,0 +1,62 @@
+%------------------------------------
+% Author: Rohit Suratekar
+% Description: Xelex template for Cover Letter
+%
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system.
+%------------------------------------
+
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Page settings
+\documentclass[11pt,a4paper]{letter}
+\usepackage[left=2cm, right = 2cm]{geometry}
+
+%Other packages
+\usepackage{hyperref} % to add external links to urls and emails
+%\usepackage[none]{hyphenat} % Sometimes will not work properly with custom fonts
+\usepackage{xcolor} % Colored text
+\usepackage{lipsum}  % To generate random text, you don't need it in actual use.
+
+%Header and Footer styles
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.4pt} %Header line width 
+\renewcommand{\footrulewidth}{0.4pt} %Footer line width 
+\rhead{Cover Letter} % Your Right Header
+\cfoot{\textcolor{gray}{{\footnotesize Email: rohitsuratekar@gmail.com | Webpage: \href{https://github.com/rohitsuratekar}{github.com/rohitsuratekar}}}} %Your Center Footer
+
+
+% Fonts Related
+\usepackage{fontspec} %To load system fonts
+\defaultfontfeatures{Ligatures=TeX} % To support LaTeX quoting style
+
+% Use your own system font here
+\setmainfont[
+BoldFont=IBMPlexSans-Bold.otf,
+ItalicFont=IBMPlexSans-Italic.otf,
+BoldItalicFont=IBMPlexSans-BoldItalic.otf
+]{IBMPlexSans-Regular.otf}
+
+\author{Rohit Suratekar}
+
+\begin{document}
+	{\hfill Date: \today}
+	~\\\\
+	Prof. Charles Xavier,\\
+	XMEN University, \\
+	Stan Lee road, Mutant Town\\
+	
+	Re: Application for Studentship at Department of Dark Phoenix {\footnotesize (Ref No: 091963)} \\
+	~\\	
+	Dear Prof. Charles Xavier,
+	% Your content	
+	\lipsum[2-4]
+	Thanking you.
+	
+	Sincerely,\\
+	\textbf{Nightcrawler}\\
+	
+\end{document}
